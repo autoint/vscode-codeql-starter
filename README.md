@@ -11,10 +11,21 @@ A starter workspace to use with the [CodeQL extension for Visual Studio Code](ht
     - Use `git submodule update --remote` regularly to keep the submodules up to date.
 1. In VS Code, click File > Open Workspace. Select the file `vscode-codeql-starter.code-workspace` in your checkout of this repository.
 1. You will see several folders open in the left sidebar:
-    - The `ql` folder contains the [open-source CodeQL standard libraries](https://github.com/Semmle/ql/tree/lgtm.com) for C/C++, C#, Java, JavaScript, and Python. It tracks the `lgtm.com` branch. You can run the standard queries from here, and browse the libraries.
+    - The `ql` folder contains the [open-source CodeQL standard libraries](https://github.com/github/codeql/tree/lgtm.com) for C/C++, C#, Java, JavaScript, and Python. It tracks the `lgtm.com` branch. You can run the standard queries from here, and browse the libraries.
     - The `codeql-go` folder contains the [open-source CodeQL standard libraries](https://github.com/github/codeql-go/tree/lgtm.com) for Go. It tracks the `lgtm.com` branch. You can run the standard queries from here, and browse the libraries.
     - The folders named `codeql-custom-queries-<language>` are ready for you to start developing your own custom queries for each language, while using the standard libraries. There are some example queries to get you started.
 1. Follow the [documentation for the CodeQL extension](https://help.semmle.com/codeql/codeql-for-vscode.html) to learn how to set up the extension, add a database and run queries against it. Have fun!
+
+## Using the `vscode-codeql-starter` in a private repository
+
+If you want to privately share your CodeQL queries with your teammates using this project as a template:
+
+1. Create an empty, private project in the organization you want.
+1. Clone this project locally: `git clone git@github.com:github/vscode-codeql-starter.git`
+1. Add a remote to the local copy `git remote add my-org git@github.com:<MY-ORG>/vscode-codeql-starter.git`
+1. Push the code to the new remote: `git push my-org master`
+
+GitHub does not allow private forks of public repositories.
 
 ## Contributing
 

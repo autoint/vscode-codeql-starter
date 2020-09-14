@@ -5,6 +5,6 @@
   ],
   "postCreateCommand": "git submodule init && git submodule update --recursive",
   "settings": {
-    "codeQL.experimentalBqrsParsing": true
+    "codeQL.runningQueries.memory": 2048
   }
  }
